@@ -1,6 +1,6 @@
 package guru.springframework.sfgdi.controllers;
 
-import guru.springframework.sfgdi.services.GreetingService;
+import guru.services.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -15,7 +15,7 @@ public class MyController {
         this.greetingService = greetingService;
     }
 
-    public String sayHello(){
+    public String sayHello() {
         return greetingService.sayGreeting();
     }
 }

@@ -1,6 +1,6 @@
 package guru.springframework.sfgdi.controllers;
 
-import guru.springframework.sfgdi.services.PetService;
+import guru.services.services.PetService;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -15,7 +15,7 @@ public class PetController {
         this.petService = petService;
     }
 
-    public String whichPetIsTheBest(){
+    public String whichPetIsTheBest() {
         return petService.getPetType();
     }
 }
